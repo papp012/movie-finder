@@ -1,0 +1,11 @@
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+venv/
+.venv/
+env*
+.cache/
+.pytest_cache/
+.idea/
