@@ -7,7 +7,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     movies = data_manager.get_all_movies()
-    print(movies)
+    horror_movies = data_manager.get_horror_movies()
+    print(horror_movies)
     return "Hello"
 
 
