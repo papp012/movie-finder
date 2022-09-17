@@ -1,11 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask
+from data import data_manager
 
-app = Flask('movie-finder')
+app = Flask(__name__)
+
 
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    movies = data_manager.get_all_movies()
+    print(movies)
+    return "Hello"
 
 
 def main():
@@ -13,4 +17,6 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    app.run(
+        debug=True
+    )
