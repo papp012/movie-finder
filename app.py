@@ -4,7 +4,6 @@ from data import data_manager
 app = Flask(__name__)
 
 
-
 @app.route('/')
 def index():
     movies = data_manager.get_all_movies()
