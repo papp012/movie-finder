@@ -23,7 +23,7 @@ header {
     box-shadow: 15px 10px 20px #010917;
 
     margin: 0;
-    padding: 1em 2em;
+    padding: 1.2em 4em;
 
     display: flex;
     flex-direction: row;
@@ -37,5 +37,26 @@ header {
 }
 
 .red-text {
-    color: var(--red);
+    color: var(--lightblue);
 }
+
+.search-field-container {
+    margin: 3em 8em;
+    padding: 2em;
+
+    font-size: larger;
+    background-color: var(--middleblue);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.search-field {
+    margin: 0 1em;
+}
+.search-field > input {
+    width: 40em;
+}
+
+
+
