@@ -58,5 +58,22 @@ header {
     width: 40em;
 }
 
+.movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    margin: 3em 8em;
+    padding: 2em;
+}
+
+.movie-container {
+    background-color: var(--darkblue);
+    box-shadow: 10px 5px 40px #010917;
+
+    width: 19.2em;
+    height: 6em;
+
+    margin: 2.2em;
+}
 

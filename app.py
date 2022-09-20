@@ -7,9 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     movies = data_manager.get_all_movies()
-    horror_movies = data_manager.get_horror_movies()
-    print(horror_movies)
-    return render_template("index.html")
+    return render_template("index.html", movies=movies)
 
 
 def main():

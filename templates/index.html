@@ -25,6 +25,12 @@
             </div>
             <div><button>Search</button></div>
         </div>
+
+        <div class="movies">
+            {% for movie in movies %}
+                <div class="movie-container">{{ movie.title }}</div>
+            {% endfor %}
+        </div>
     </section>
     <footer>
     </footer>
