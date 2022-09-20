@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
     --purple: #745173;
     --red: #B80327;
@@ -8,6 +11,7 @@
 }
 
 body {
+    font-family: "Montserrat", sans-serif;
     background-color: var(--darkblue);
     color: var(--white);
 
@@ -24,4 +28,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+}
+
+.page-name {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+}
+
+.red-text {
+    color: var(--red);
 }
