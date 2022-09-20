@@ -1,8 +1,15 @@
 :root {
     --purple: #745173;
     --red: #B80327;
-    --white: #EBFEFD;
+    --white: #d3f5f3;
     --lightblue: #00819D;
     --middleblue: #02294E;
-    --darkblue: #001633;
+    --darkblue: #011128;
 }
+
+body {
+    background-color: var(--darkblue);
+    color: var(--white)
+}
+
+header {}

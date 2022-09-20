@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from data import data_manager
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ def index():
     movies = data_manager.get_all_movies()
     horror_movies = data_manager.get_horror_movies()
     print(horror_movies)
-    return "Hello"
+    return render_template("index.html")
 
 
 def main():
