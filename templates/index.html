@@ -7,6 +7,7 @@
 
     <title>Movie Finder</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="{{ url_for('static', filename='js/search-movie.js') }}" defer></script>
 
 </head>
 
@@ -23,7 +24,7 @@
                 <label for="searched-movie-title"></label>
                 <input id="searched-movie-title" type="text">
             </div>
-            <div><button>Search</button></div>
+            <div><button id="movie-search-button">Search</button></div>
         </div>
 
         <div class="movies">

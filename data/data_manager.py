@@ -6,6 +6,6 @@ def get_all_movies():
     return all_movies
 
 
-def get_horror_movies():
-    horror_movies = query.get_horror_movies()
-    return horror_movies
+def get_movies_by_title(searched_title):
+    movies_by_title = query.get_movies_by_title(searched_title)
+    return movies_by_title

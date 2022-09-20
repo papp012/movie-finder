@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 from data import data_manager
 
 app = Flask(__name__)
@@ -8,6 +8,12 @@ app = Flask(__name__)
 def index():
     movies = data_manager.get_all_movies()
     return render_template("index.html", movies=movies)
+
+
+@app.route('/api/get-overview-by-title/<searchedTitle>')
+def get_movies_by_title(searchedTitle):
+    search_movies = data_manager.get_movies_by_title(searchedTitle)
+    return jsonify(search_movies)
 
 
 def main():
