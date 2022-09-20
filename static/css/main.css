@@ -9,7 +9,19 @@
 
 body {
     background-color: var(--darkblue);
-    color: var(--white)
+    color: var(--white);
+
+    margin:0;
 }
 
-header {}
+header {
+    /*background-color: var(--middleblue);*/
+    box-shadow: 15px 10px 20px #010917;
+
+    margin: 0;
+    padding: 1em 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
