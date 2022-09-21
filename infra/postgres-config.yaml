@@ -1,0 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: postgres-config
+  namespace: default
+  labels:
+    app: movie-finder
+data:
+  POSTGRES_DB: movie-finder
+  POSTGRES_USER: papp
+  POSTGRES_PASSWORD: All8Tn
