@@ -68,12 +68,29 @@ header {
 }
 
 .movie-container {
+    display: flex;
+    flex-direction: column;
+
     background-color: var(--darkblue);
     box-shadow: 10px 5px 40px #010917;
 
-    width: 19.2em;
-    height: 6em;
-
+    width: 16em;
+    height: 20em;
     margin: 2.2em;
+    padding: 1em 1em;
+}
+
+.movie-image {
+    background-color: var(--middleblue);
+    align-self: center;
+
+    width: 70%;
+    height: 15em;
+    margin-bottom: 1em;
+}
+.movie-title {
+    color: var(--lightblue);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
 }
 
