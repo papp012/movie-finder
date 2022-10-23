@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  flaskapi-deployment
+  labels:
+    app:  flaskapi
+spec:
+  selector:
+    matchLabels:
+      app: flaskapi
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: flaskapi
+    spec:
+      containers:
+      - name:  flaskapi
+        image: papp012/flask-app:latest        
+        
+        env:
+        - name: PSQL_DB_NAME
+          value: movie-finder
+        - name: PSQL_HOST
+          value: postgres-svc
+        - name: PSQL_USER_NAME
+          value: user
+        - name: PSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: flaskapi-secret
+              key: db_root_password
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+spec:
+  selector:
+    app: flaskapi
+  
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+  type: NodePort
