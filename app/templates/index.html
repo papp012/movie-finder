@@ -31,8 +31,8 @@
             {% for movie in movies %}
                 <div class="movie-container">
                     <div class="movie-title">{{ movie.title }}</div>
-                    <div class="movie-year">{{ movie.year }}</div>
-                    <div class="movie-runtime">{{ movie.runtime }}</div>
+                    <div class="movie-year">Release date: {{ movie.year }}</div>
+                    <div class="movie-runtime">Runtime: {{ movie.runtime }} h</div>
                 </div>
             {% endfor %}
         </div>

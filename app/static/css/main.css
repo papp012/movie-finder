@@ -75,7 +75,7 @@ header {
     box-shadow: 10px 5px 40px #010917;
 
     width: 16em;
-    height: 20em;
+    height: 10em;
     margin: 2.2em;
     padding: 1em 1em;
 }
@@ -92,5 +92,7 @@ header {
     color: var(--lightblue);
     font-family: "Bebas Neue", sans-serif;
     font-weight: bolder;
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
 }
 
