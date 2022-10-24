@@ -96,3 +96,17 @@ header {
     margin-bottom: 1.5em;
 }
 
+#movie-search-button {
+    background-color: var(--lightblue);
+    padding: 0.4em 0.8em;
+    border: none;
+    color: var(--white);
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 0.2em;
+}
+
+#movie-search-button:hover {
+    background-color: #0f9ab7;
+}
+
